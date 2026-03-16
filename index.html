@@ -935,7 +935,7 @@ async function submitChallenge() {
   try {
     await fetch(CONFIG.gasUrl, {
       method: "POST", mode: "no-cors",
-      headers: { "Content-Type": "application/json" },
+      headers: { "Content-Type": "text/plain" },
       body: JSON.stringify({
         cohort: CONFIG.cohort, week: CONFIG.week,
         name, phone,
