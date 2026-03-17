@@ -535,7 +535,7 @@ select.form-input:invalid { color: var(--hint); }
   transition: max-height 0.35s ease, padding 0.35s ease;
   padding: 0 20px; font-size: 13px; color: var(--sub); line-height: 1.7;
 }
-.faq-item.open .faq-a { max-height: 300px; padding: 0 20px 18px; }
+.faq-item.open .faq-a { max-height: 200px; padding: 0 20px 18px; }
 
 /* ========== Footer ========== */
 .footer { text-align: center; padding: 32px 0 48px; font-size: 11px; color: var(--hint); letter-spacing: 0.04em; }
@@ -765,10 +765,6 @@ select.form-input:invalid { color: var(--hint); }
         <div class="faq-q" onclick="toggleFaq(this)">제출했는데 리워드 링크가 안 보여요 <span class="arrow">▼</span></div>
         <div class="faq-a">인터넷 연결을 확인해 주세요. 계속 안 될 경우 체인저스캠퍼스 채널톡으로 문의해 주시면 안내드립니다.</div>
       </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">기수나 이메일을 왜 입력해야 하나요? <span class="arrow">▼</span></div>
-        <div class="faq-a">리워드 지급 내역을 정확히 관리하기 위해 필요합니다. 본인 확인 및 추후 안내사항 전달 시 사용됩니다.</div>
-      </div>
     </div>
   </div>
 
@@ -786,8 +782,9 @@ const CONFIG = {
   // ⚠️ GAS 배포 URL을 여기에 붙여넣으세요
   gasUrl: "https://script.google.com/macros/s/AKfycbzQdRQ7uPoc10lzC9287HQ7ud5pQy9a3GJlKJdWjsjlbwe3n6jSflk-I9xpXZiISmcG/exec",
 
-  // 주차별 리워드 URL
+  // ⚠️ 경고: 밤샘챌린지에 참가하지 않고 해당 링크를 무단 이용하는 경우, 향후 모든 리워드 및 혜택에서 영구 제외됩니다. 어뷰징 적발 시 기수 전체 혜택이 박탈됩니다.
   rewardUrl: "https://drive.google.com/file/d/1I83qtekkYnqOdqe7SW00sY5i4nIbToH0/view?usp=sharing",
+
 
   // 공지사항 (빈 문자열이면 배너 숨김)
   notice: "반드시 강의를 모두 수강하신 후에 리워드를 다운받으셔야 합니다. 강의를 모두 수강하지 않고 리워드를 수령하실 경우 추후 혜택들에서 불이익이 있을 수 있습니다.",
